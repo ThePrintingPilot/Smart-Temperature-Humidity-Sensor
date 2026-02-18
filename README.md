@@ -97,4 +97,4 @@ If the ESP keeps disconnecting, press the reset button on the ESP and connect it
 
 **AND that's it, you're done making the DIY Smart Home Temperature/Humidity Sensor For Home Assistant.**
 
-<img src="https://raw.githubusercontent.com/ThePrintingPilot/Smart-Temperature-Humidity-Sensor/refs/heads/main/Pictures/1.gif" width="500" height="300" />
+<img src="https://raw.githubusercontent.com/ThePrintingPilot/Smart-Temperature-Humidity-Sensor/refs/heads/main/Pictures/Revision%201-5.png" width="500" height="350" />
