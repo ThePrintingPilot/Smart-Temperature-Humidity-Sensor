@@ -1,21 +1,38 @@
-# **Smart Air Refreshener**  <img src="https://raw.githubusercontent.com/ThePrintingPilot/Smart-Air-Refreshener/refs/heads/main/Pictures/Glade.jpg" width="90" height="70" /> ✨
-
-Hey guys! 
-Here you can find all the information and the neccery files for converting your Glade Spary into a Smart Air Refrehener.
-
-<img src="https://raw.githubusercontent.com/ThePrintingPilot/Smart-Air-Refreshener/refs/heads/main/Pictures/PCB.png" width="300" height="250" /> 
-
-What files do i need?
-
-* Greber files for PCB manifacturing.
-* BOM - for PCB componenets.
-* Precompiled Bin files, OR Yaml file if you want to edit/complie it yourself (Via ESPHome).
+# **DIY Temperature/Humidity Sensor** <img src="https://raw.githubusercontent.com/ThePrintingPilot/Smart-Temperature-Humidity-Sensor/refs/heads/main/Pictures/3.jpg" width="90" height="70" /> ✨
 
 
+## **Welcome!**
+
+For a while, I've been using Zigbee and Bluetooth temperature and humidity sensors around my house.
+After many issues with Zigbee disconnecting and batteries running out 3 times a week. And since I've been constantly repairing Home Assistant sensors, I've decided to design the best smart home temperature and Humidity Sensor for myself.
+
+I've designed a plug-in, temperature/humidity sensor that works over Wi-Fi, and it's all open source!
+
+## **Why Choose My Design?**
+
+Fully plug-in design - no batteries needed.
+Fully Open Source - All code is available using ESPHOME.
+Automatically discovered and connected to Home Assistant.
+Only 5 components for the PCB. 
+
+## **What do I need?**
+
+- PCB 
+- 10 KΩ resistor x2 - [Link](https://www.lcsc.com/product-detail/C17902.html)
+- 100nF capacitor - [Link](https://www.lcsc.com/product-detail/C1590.html)
+- ESP 32 - [Affiliate Link](https://s.click.aliexpress.com/e/_c3afmmmj)
+- SHT40 - [Link](https://www.digikey.com/en/products/detail/sensirion-ag/SHT40-AD1B-R2/13532084)
+- 3D Printed Enclosure - [Link](placeholder)
+
+## **3D Printed Enclosure:**
+Open the 3mf file as a project, that way you can see the mid print pause to add the magnets
+
+<img src="https://raw.githubusercontent.com/ThePrintingPilot/Smart-Temperature-Humidity-Sensor/refs/heads/main/Pictures/2.gif" width="300" height="200" />
+
+---
 **The project is open-source, but please consider supporting us and helping us with feature developments by purchasing the PCBs from our [Offical Shop](https://theprintingpilot.com) . Thank you!**
 
 ---
-
 ## **Check out the full step by step instruction video on our youtube channel:**
 
 [![Video Title](https://img.youtube.com/vi/BA6ApWcxhgQ/0.jpg)](https://www.youtube.com/watch?v=BA6ApWcxhgQ)
@@ -36,34 +53,48 @@ To discuss everything about our custom made PCBs or everything 3D printed!
 [<img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/YouTube_full-color_icon_%282024%29.svg" width="150" height="150" />](https://www.youtube.com/@ThePrintingPilot)
 
 
+## **Instructions:** 
+**- Assemble the PCB:**
+ Solder the capacitor, 2 resistors, the temperature sensor, and the esp as shown in the images.
 
----
+<img src="https://raw.githubusercontent.com/ThePrintingPilot/Smart-Temperature-Humidity-Sensor/refs/heads/main/Pictures/4.jpg" width="300" height="200" />
+<img src="https://raw.githubusercontent.com/ThePrintingPilot/Smart-Temperature-Humidity-Sensor/refs/heads/main/Pictures/3.jpg" width="300" height="200" />
 
-## 🖳 **Parts:**  
-• Glade Air Spray [Link](https://www.amazon.com/dp/B01GHGMO90?ref=ppx_yo2ov_dt_b_fed_asin_title) 
+**- Software:**
+Download the compiled bin file from GitHub, and go to the ESPhome [installer.](https://web.esphome.io/)
+Connect the PCB to your computer, press the connect button, and choose your esp in the pop-up window.
 
-• The Printing Pilot Smart PCB [Link](https://theprintingpilot.com) 
+<img src="https://raw.githubusercontent.com/ThePrintingPilot/Smart-Temperature-Humidity-Sensor/refs/heads/main/Pictures/5.png" width="300" height="350" />
 
----
-## 🖳 **Firmware 1.1.0:**  
+Then press install and add the bin file. and wait for the installation to complete.
 
-This is a firmware 1.1.0 update. with the help of @atownsend247 we added the next features:
+<img src="https://raw.githubusercontent.com/ThePrintingPilot/Smart-Temperature-Humidity-Sensor/refs/heads/main/Pictures/6.png" width="300" height="350" />
 
-1. Spray Tracking - an autimatic counter, to count the amount of sprays between refils (the counter persist after ESP32 reboot).
-2. Spray Reset Button - Reset the counter when refilling.
-3. Select input which allows for easier automation if you run it in a manual mode, or auto mode (i.e automations should trigger and run)
+If the ESP keeps disconnecting, press the reset button on the ESP and connect it to the computer simultaneously. That will ensure the esp is in pairing mode.
 
-<img src="https://raw.githubusercontent.com/ThePrintingPilot/Smart-Air-Refreshener/refs/heads/main/Pictures/Firmware_1.1.0.png" width="750" height="300" />
 
----
-## 🖳 **Useage:**  
-after powering the Smart Air Refreshener for the first time, the board will broadcast an AP "Smart-Air-Refreshener". Connect to it via your phone.
 
-<img src="https://raw.githubusercontent.com/ThePrintingPilot/Smart-Air-Refreshener/refs/heads/main/Pictures/Wifi.png" width="310" height="500" /> 
 
-after connection to the AP, a windows will open, if not just go 192.168.4.1.
-add your wifi network SSID and Password and that's it!
 
-<img src="https://esphome.io/images/captive_portal-ui.png" width="500" height="500" /> 
+**- Next** go to your phone, look for the Wi-Fi hotspot the ESP is transmitting, and connect to it.
 
-now you can go to your board ip to have some basic webserver controls, or connect to Home Assitant via ESPHome integration.
+<img src="https://raw.githubusercontent.com/ThePrintingPilot/Smart-Temperature-Humidity-Sensor/refs/heads/main/Pictures/2.jpg" width="300" height="350" />
+
+
+
+ Enter the Wi-Fi credentials on the page that opens. If nothing opens, go to your browser and type 192.168.4.1
+
+<img src="https://raw.githubusercontent.com/ThePrintingPilot/Smart-Temperature-Humidity-Sensor/refs/heads/main/Pictures/1.jpg" width="300" height="450" />
+
+
+**- Next,** you need to adopt the sensor into Home Assistant. Home Assistant should discover it automagically, and the sensor should appear in the integration page.(Check the video to see the software and the process).
+
+
+**- Last,** put the PCB inside the enclosure, and enjoy!
+
+<img src="https://raw.githubusercontent.com/ThePrintingPilot/Smart-Temperature-Humidity-Sensor/refs/heads/main/Pictures/1.gif" width="500" height="300" />
+
+
+**AND that's it, you're done making the DIY Smart Home Temperature/Humidity Sensor For Home Assistant.**
+
+<img src="https://raw.githubusercontent.com/ThePrintingPilot/Smart-Temperature-Humidity-Sensor/refs/heads/main/Pictures/1.gif" width="500" height="300" />
