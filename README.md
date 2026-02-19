@@ -8,7 +8,7 @@ After many issues with Zigbee disconnecting and batteries running out 3 times a 
 
 I've designed a plug-in, temperature/humidity sensor that works over Wi-Fi, and it's all open source!
 
-**If you like to support us, we offer a fully assembled version of the sensor at our store. [link](https://theprintingpilot.com/products/smart-home-temperature-humidity-sensor)**
+**If you like to support us, we offer a fully assembled version of the sensor at our store. [link](https://shlink.nassicloud.com/UqLPg)**
 
 
 
@@ -34,7 +34,7 @@ Open the 3mf file as a project, that way you can see the mid print pause to add 
 <img src="https://raw.githubusercontent.com/ThePrintingPilot/Smart-Temperature-Humidity-Sensor/refs/heads/main/Pictures/2.gif" width="300" height="200" />
 
 ---
-**The project is open-source, but please consider supporting us and helping us with feature developments by purchasing the PCBs from our [Offical Shop](https://theprintingpilot.com/products/smart-home-temperature-humidity-sensor) . Thank you!**
+**The project is open-source, but please consider supporting us and helping us with feature developments by purchasing the PCBs from our [Offical Shop](https://shlink.nassicloud.com/UqLPg) . Thank you!**
 
 ---
 ## **Check out the full step by step instruction video on our youtube channel:**
