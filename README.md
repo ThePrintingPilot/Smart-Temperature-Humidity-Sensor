@@ -43,6 +43,7 @@ Open the 3mf file as a project, that way you can see the mid print pause to add 
 
 
 
+
 ## **Join Our Discord Server**
 ---
 To discuss everything about our custom made PCBs or everything 3D printed!
