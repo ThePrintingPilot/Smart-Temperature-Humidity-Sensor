@@ -24,7 +24,7 @@ Only 5 components for the PCB. 
 - PCB 
 - 10 KΩ resistor x2 - [Link](https://www.lcsc.com/product-detail/C17902.html)
 - 100nF capacitor - [Link](https://www.lcsc.com/product-detail/C1590.html)
-- ESP 32 - [Affiliate Link](https://s.click.aliexpress.com/e/_c3afmmmj)
+- ESP32-C3 SuperMini - [Affiliate Link](https://s.click.aliexpress.com/e/_c3afmmmj)
 - SHT40 - [Link](https://www.digikey.com/en/products/detail/sensirion-ag/SHT40-AD1B-R2/13532084)
 - 3D Printed Enclosure - [Link](placeholder)
 
